@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Nav from './components/nav/Nav';
-import LandingPage from './components/LandingPage';
+import LandingPage from './components/landingpage/LandingPage';
 import Books from './components/books/Books';
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
       <div>
         <Nav />
         <Routes>
-          <Route path="/" exact component={LandingPage} />
-          <Route path="/books" component={Books} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/books" element={<Books />} />
         </Routes>
       </div>
     </Router>

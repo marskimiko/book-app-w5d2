@@ -1,9 +1,12 @@
 import React from 'react'
+import './LandingPageStyles.css';
 
 function LandingPage() {
   return (
-    <div>LandingPage</div>
+    <div className='container'>
+      <h1>Marisa's Favorite Books</h1>
+    </div>
   )
 }
 
-export default LandingPage
+export default LandingPage;
