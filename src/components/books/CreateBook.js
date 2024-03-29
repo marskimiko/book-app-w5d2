@@ -1,4 +1,5 @@
 import React, { useState, useId } from 'react';
+import './BooksStyles.css';
 
 
 function CreateBook({ handleAddBook}) {
@@ -21,6 +22,7 @@ function CreateBook({ handleAddBook}) {
   }
 
   return (
+    <div className="form-container">
     <form onSubmit={handleSubmit}>
       <input 
         type="text" 
@@ -42,6 +44,7 @@ function CreateBook({ handleAddBook}) {
       />
       <button type="submit">Create Book</button>
     </form>
+    </div>
   )
 }
 
