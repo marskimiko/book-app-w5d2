@@ -2,7 +2,7 @@ import React, { useState, useId } from 'react';
 import './BooksStyles.css';
 
 
-function CreateBook({ handleAddBook}) {
+function CreateBook({ handleAddBook }) {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
   const [cover, setCover] = useState('');
